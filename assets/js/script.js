@@ -284,7 +284,7 @@ $("#modalDueDate").datepicker({
 
 setInterval(function() {
   $(".card .list-group-item").each(function() {
-    auditTask(el);
+    auditTask($(this));
   });
 }, (100 * 60) * 30);
 
